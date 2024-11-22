@@ -82,7 +82,7 @@ def main():
             files = item.get('files', [])
             file_names = "\n".join([file.get('name', 'Unnamed file') for file in files]) if files else "No files available"
             #Truncate file list to 1024 characters due to Discord limit
-            file_list = file_names[:1024] if len(file_names) > 1024 else file_names
+            file_list = file_names[:1018] if len(file_names) > 1018 else file_names
 
             # Create the embed
             embed = [{
