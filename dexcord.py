@@ -86,7 +86,7 @@ def main():
 	    if tracker == "Nyaa":
                 thumbnail = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX5P9Y14UdD0TMk5p0vVRnKAhRa0P8XigHjw&s"
             elif tracker == "AnimeBytes":
-                thumbnail = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_bpBPzpm_WIdMJFiVzaCr5Nhbswi1u-yH8Q&s"
+                thumbnail = "https://avatars.githubusercontent.com/u/46026525?s=200&v=4"
             else:
                 thumbnail = "https://releases.moe/favicon.png"
 
