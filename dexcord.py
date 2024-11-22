@@ -82,7 +82,13 @@ def main():
             files = item.get('files', [])
             file_names = "\n".join([file.get('name', 'Unnamed file') for file in files]) if files else "No files available"
             #Truncate file list to 1024 characters due to Discord limit
-            file_list = file_names[:1018] if len(file_names) > 1018 else file_names
+	    file_list = file_names[:1018] if len(file_names) > 1018 else file_names
+	    if tracker == "Nyaa":
+                thumbnail = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX5P9Y14UdD0TMk5p0vVRnKAhRa0P8XigHjw&s"
+            elif tracker == "AnimeBytes":
+                thumbnail = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_bpBPzpm_WIdMJFiVzaCr5Nhbswi1u-yH8Q&s"
+            else:
+                thumbnail = "https://releases.moe/favicon.png"
 
             # Create the embed
             embed = [{
@@ -95,7 +101,7 @@ def main():
                     "url": "https://releases.moe/"
                 },
                 "thumbnail": {
-		            "url": "https://releases.moe/favicon.png"
+		            "url": thumbnail
 	            },
                 "fields": [
                     {
