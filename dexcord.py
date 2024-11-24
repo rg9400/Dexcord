@@ -84,11 +84,11 @@ def main():
             #Truncate file list to 1024 characters due to Discord limit
 	    file_list = file_names[:1018] if len(file_names) > 1018 else file_names
 	    if tracker == "Nyaa":
-                thumbnail = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX5P9Y14UdD0TMk5p0vVRnKAhRa0P8XigHjw&s"
+                thumbnail = "https://raw.githubusercontent.com/rg9400/Dexcord/refs/heads/main/nyaa.png"
             elif tracker == "AnimeBytes":
-                thumbnail = "https://avatars.githubusercontent.com/u/46026525?s=200&v=4"
+                thumbnail = "https://raw.githubusercontent.com/rg9400/Dexcord/refs/heads/main/animebytes.jpg"
             else:
-                thumbnail = "https://releases.moe/favicon.png"
+                thumbnail = "https://raw.githubusercontent.com/rg9400/Dexcord/refs/heads/main/seadex.png"
 
             # Create the embed
             embed = [{
@@ -97,7 +97,7 @@ def main():
                 "url": url,
                 "author": {
                     "name": "Dexcord",
-                    "icon_url": "https://releases.moe/favicon.png",
+                    "icon_url": "https://raw.githubusercontent.com/rg9400/Dexcord/refs/heads/main/seadex.png",
                     "url": "https://releases.moe/"
                 },
                 "thumbnail": {
