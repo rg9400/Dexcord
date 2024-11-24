@@ -154,7 +154,7 @@ def main():
                 cur = con.cursor()
                 insert = (id, timestamp)
                 cur.execute("""
-                    INSERT INTO updates VALUES
+                    UPSERT INTO updates VALUES
                         {}
                 """.format(insert))
                 con.commit()
