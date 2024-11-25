@@ -56,7 +56,7 @@ def main():
         print("Need to create updates table")
         if sqlite3.OperationalError:
             try:
-                cur.execute("CREATE TABLE updates(id, updated_at)")
+                cur.execute("CREATE TABLE updates(id type UNIQUE, updated_at)")
             except sqlite3.Error() as e:
                 print(e, " occured")
     con.commit()
@@ -154,8 +154,9 @@ def main():
                 cur = con.cursor()
                 insert = (id, timestamp)
                 cur.execute("""
-                    UPSERT INTO updates VALUES
+                    INSERT INTO updates VALUES
                         {}
+				ON CONFLICT(id) DO UPDATE SET updated_at=excluded.updated_at
                 """.format(insert))
                 con.commit()
                 con.close()
