@@ -87,7 +87,7 @@ def main():
                 thumbnail = "https://raw.githubusercontent.com/rg9400/Dexcord/refs/heads/main/nyaa.png"
             elif tracker == "AnimeBytes":
                 thumbnail = "https://raw.githubusercontent.com/rg9400/Dexcord/refs/heads/main/animebytes.jpg"
-		url = f"https://animebytes.tv/{url}"
+		url = f"https://animebytes.tv{url}"
             else:
                 thumbnail = "https://raw.githubusercontent.com/rg9400/Dexcord/refs/heads/main/seadex.png"
 
