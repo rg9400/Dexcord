@@ -85,7 +85,7 @@ def main():
 	    file_list = file_names[:1018] if len(file_names) > 1018 else file_names
 	    if tracker == "Nyaa":
                 thumbnail = "https://raw.githubusercontent.com/rg9400/Dexcord/refs/heads/main/nyaa.png"
-            elif tracker == "AnimeBytes":
+            elif tracker == "AB":
                 thumbnail = "https://raw.githubusercontent.com/rg9400/Dexcord/refs/heads/main/animebytes.jpg"
 		url = f"https://animebytes.tv{url}"
             else:
