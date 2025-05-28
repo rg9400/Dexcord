@@ -88,6 +88,9 @@ def main():
             elif tracker == "AB":
                 thumbnail = "https://raw.githubusercontent.com/rg9400/Dexcord/refs/heads/main/animebytes.jpg"
 		url = f"https://animebytes.tv{url}"
+	    elif tracker == "OtherPrivate":
+                thumbnail = "https://raw.githubusercontent.com/rg9400/Dexcord/refs/heads/main/seadex.png"
+                url = "https://releases.moe"
             else:
                 thumbnail = "https://raw.githubusercontent.com/rg9400/Dexcord/refs/heads/main/seadex.png"
 
