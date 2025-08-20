@@ -85,14 +85,18 @@ def main():
 	    file_list = file_names[:1018] if len(file_names) > 1018 else file_names
 	    if tracker == "Nyaa":
                 thumbnail = "https://raw.githubusercontent.com/rg9400/Dexcord/refs/heads/main/nyaa.png"
-            elif tracker == "AB":
+        elif tracker == "AB":
                 thumbnail = "https://raw.githubusercontent.com/rg9400/Dexcord/refs/heads/main/animebytes.jpg"
-		url = f"https://animebytes.tv{url}"
+				url = f"https://animebytes.tv{url}"
+		elif tracker == "Aither":
+                thumbnail = "https://raw.githubusercontent.com/rg9400/Dexcord/refs/heads/main/seadex.jpg"
+                url = f"https://aither.cc{url}"
 	    elif tracker == "OtherPrivate":
                 thumbnail = "https://raw.githubusercontent.com/rg9400/Dexcord/refs/heads/main/seadex.png"
                 url = "https://releases.moe"
-            else:
+        else:
                 thumbnail = "https://raw.githubusercontent.com/rg9400/Dexcord/refs/heads/main/seadex.png"
+				url = "https://releases.moe"
 
             # Create the embed
             embed = [{
